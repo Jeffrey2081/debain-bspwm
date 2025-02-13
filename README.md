@@ -1,8 +1,4 @@
 # BSPWM customizations for debian based distros
-Debian customizations from Chris Titus Tech
- 
-## Requirements
-_This install changes Debian to the SID (Dev) Branch_
 
 ### Download Debian Testing netinstall
 
