@@ -25,11 +25,12 @@ cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
 cp bg.jpg /home/$username/Pictures/background.jpg
+cp .zshrc /home/$username/.zshrc
 mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
 
 # Installing Essential Programs 
-nala install feh bspwm sxhkd alacritty rofi polybar picom thunar lxpolkit x11-xserver-utils lightdm lightdm-gtk-greeter unzip yad wget pulseaudio pavucontrol -y
+nala install feh bspwm sxhkd alacritty rofi polybar picom zsh thunar lxpolkit x11-xserver-utils lightdm lightdm-gtk-greeter unzip yad wget pulseaudio pavucontrol -y
 # Installing Other less important Programs
 nala install fastfetch psmisc neovim lxappearance papirus-icon-theme fonts-noto-color-emoji zoxide -y
 
@@ -74,3 +75,9 @@ chmod +x /home/$username/bspwm/bspwmrc
 chmod +x /home/$username/.config/rofi/powermenu/powermenu.sh
 # Use nala
 bash scripts/usenala
+#Setting up shell
+USER_HOME=$(eval echo ~$SUDO_USER)
+
+# Change the shell for the non-root user
+sudo su - "$username" -c "chsh -s $(which zsh)"
+curl -sS https://starship.rs/install.sh | sh
