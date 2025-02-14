@@ -1,0 +1,12 @@
+colors:
+  primary:
+    background: '#1e1e1e'   # background color
+    foreground: '#ffffff'    # text color
+
+# You can add other theme settings as needed
+font:
+  normal:
+    family: "Fira Code"
+    style: Regular
+  size: 12.0
+
