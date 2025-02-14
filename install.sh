@@ -73,6 +73,7 @@ systemctl set-default graphical.target
 bash scripts/changeinterface
 chmod +x /home/$username/bspwm/bspwmrc
 chmod +x /home/$username/.config/rofi/powermenu/powermenu.sh
+chmod +x /home/$username/.zshrc
 # Use nala
 bash scripts/usenala
 #Setting up shell
