@@ -14,7 +14,7 @@ apt update
 apt upgrade -y
 
 # Install nala
-apt install nala -y
+apt install nala wget unzip fontconfig -y
 
 # Making .config and Moving config files and background to Pictures
 cd $builddir
