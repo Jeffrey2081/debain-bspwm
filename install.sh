@@ -70,6 +70,6 @@ systemctl set-default graphical.target
 
 # Polybar configuration
 bash scripts/changeinterface
-
+chmod +x /home/$username/bspwm/bspwmrc
 # Use nala
 bash scripts/usenala
