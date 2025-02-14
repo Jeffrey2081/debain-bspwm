@@ -71,5 +71,6 @@ systemctl set-default graphical.target
 # Polybar configuration
 bash scripts/changeinterface
 chmod +x /home/$username/bspwm/bspwmrc
+chmod +x /home/$username/.config/rofi/powermenu/powermenu.sh
 # Use nala
 bash scripts/usenala
