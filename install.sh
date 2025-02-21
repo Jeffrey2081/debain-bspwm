@@ -30,7 +30,8 @@ mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
 
 # Installing Essential Programs 
-nala install feh bspwm sxhkd alacritty rofi polybar picom zsh thunar lxpolkit x11-xserver-utils lightdm lightdm-gtk-greeter unzip yad wget pulseaudio pavucontrol -y
+nala install feh bspwm sxhkd alacritty rofi polybar picom zsh thunar lxpolkit x11-xserver-utils lightdm lightdm-gtk-greeter -y
+nala install unzip yad wget pulseaudio pavucontrol -y
 # Installing Other less important Programs
 nala install fastfetch psmisc neovim lxappearance papirus-icon-theme fonts-noto-color-emoji zoxide -y
 
